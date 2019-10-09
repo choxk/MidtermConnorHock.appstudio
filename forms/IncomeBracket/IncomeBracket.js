@@ -1,3 +1,5 @@
+let income = "";
+
 let tax = 0
 function taxBracket(x) {
   if (x< 30000) {
@@ -14,7 +16,6 @@ btnSubmit.onclick=function(){
   let income = inptIncome.value;
   lblTaxBracket.value =`With your income of $${income}, you are in a tax bracket of ${taxBracket(Number(income))}\%`
 }
-
 
 btnGoAgain.onclick=function(){
   inptIncome.value = '';
